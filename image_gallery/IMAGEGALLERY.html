@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Image Gallery</title>
+  <link rel="stylesheet" href="IMAGEGALLERY.css">
+  
+
+</head>
+<body>
+ 
+  <h1>Image Gallery</h1>
+  <p>Click images to enlarge. Filter by category below!</p>
+
+
+  <div class="buttons">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="people">People</button>
+    <button data-filter="city">City</button>
+  </div>
+
+
+  <div class="gallery">
+    <img src="assets/nature1.jpeg" data-category="nature">
+    <img src="assets/people1.jpg" data-category="people">
+    <img src="assets/city1.jpeg" data-category="city">
+    <img src="assets/nature2.jpeg" data-category="nature">
+    <img src="assets/people2.jpeg" data-category="people">
+    <img src="assets/city2.jpeg" data-category="city">
+    <img src="assets/nature3.jpg" data-category="nature">
+  </div>
+
+
+  <div class="lightbox" id="lightbox">
+    <button class="close">&times;</button>
+    <button class="prev">&#10094;</button>
+    <img src="" alt="lightbox">
+    <button class="next">&#10095;</button>
+  </div>
+ <script src="IMAGEGALLERY.js"></script>
+
+</body>
+</html>
+
