@@ -1,0 +1,106 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+
+header {
+  background: #01003d;
+  padding: 15px 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { color: #fff; font-size: 1.5rem; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.nav-links a:hover { color: #caf0f8; }
+
+
+#hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #021153, #00034f);
+  color: white;
+  padding: 20px;
+}
+#hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
+#hero span { color: #ffdd00; }
+#hero p { margin-bottom: 20px; max-width: 600px; }
+.btn {
+  display: inline-block;
+  background: #ffdd00;
+  color: #4b4938;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover { background: #ffc300; }
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+section p { max-width: 800px; margin: 0 auto 20px auto; }
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background: #010251;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  color:whitesmoke
+}
+.project-card:hover { transform: translateY(-6px); }
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #021461;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover { background: #020e45; }
+
+
+footer {
+  background: #060029;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
